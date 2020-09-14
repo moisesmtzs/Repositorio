@@ -4,6 +4,7 @@
 using namespace std;
 int nombre();
 int main();
+int edad();
 
 
 int main(){
@@ -14,7 +15,8 @@ int main(){
         cout<<"\t\tMENÚ PRINCIPAL\n";
         cout<<"-------------------------------------------\n\n";
         cout<<"\t\t1.- Ingresar nombre \n";
-        cout<<"\t\t2.- Salir\n\n";
+        cout<<"\t\t2.- Ingresar edad \n";
+        cout<<"\t\t3.- Salir\n\n";
         cout<<"Elige una opción  \n";
         cin>>opt;
         switch(opt)
@@ -22,8 +24,10 @@ int main(){
             case 1:
                 nombre();
                 break;
-
             case 2:
+                edad();
+                break;
+            case 3:
                 cout<<"\n";
                 cout<<"\t\tHASTA LUEGO...";
                 cout<<"\n\n\n";
@@ -45,5 +49,14 @@ int nombre(){
     cout<<"Nombre: ";
     cin.ignore();
     cin>>nombre;
+    cout<<"Bienvenido "<<nombre<<endl;
+
+}
+
+int edad(){
+
+    int edad;
+    cout<<"Edad: ";
+    cin>>edad;
 
 }
